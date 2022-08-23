@@ -15,10 +15,13 @@ int main()
     i = 1;
 
     // Nhập giá trị tư bàn phím    
+    
     do
     {
+        // Cho đến khi n > 1 thì 
         cout << "Nhập số N lớn hơn 1:" << endl;
         cin >> n;
+        // Nếu số đã nhập n < 1 thì in hướng dẫn
         if(n < 1)
         {
             cout << "N phải lớn hơn 1" << endl;

@@ -27,8 +27,6 @@ int main()
 
     // Xuất kết quả
     cout << "S=" << S << endl;
-
-    // test sadjkfhoau
     
     return 0;
 }

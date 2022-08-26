@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <math.h>
 
 using namespace std;
 
@@ -23,7 +24,7 @@ double Power_n(float x, int n)
 int main()
 {
     // Tạo biến
-    float x, z;
+    float x, z, q;
     int n;
 
     // Nhập giá trị từ bàn phím
@@ -35,9 +36,17 @@ int main()
     // Gọi hàm power_n() để tính x^n
     z = Power_n(x, n);
 
+    // Gọi hàm pow() để tính x^n
+    q = pow(x, n);
+
     // Xuất kết quả
     cout << "Kết quả của ";
-    cout << x << "^" << n << "=" << z << endl;
+    cout << x << "^" << n << " tính theo cách dùng hàm power_n() là: ";
+    cout << z << endl;
+
+    cout << "Kết quả của ";
+    cout << x << "^" << n << " tính theo cách dùng hàm pow() là: ";
+    cout << q << endl;
 
     return 0;
 }

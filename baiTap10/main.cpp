@@ -3,40 +3,41 @@
 
 using namespace std;
 
+// hàm tính luỹ thừa
+double Power_n(float x, int n)
+{
+    // Khai báo biến result result = 1, vì kết quả của phép nhân nên sẽ gán giá trị bằng 1
+    // nếu gắn = 0 thì kết quả trả về luôn luôn bằng 0
+    float result = 1;
+
+    // Sử dụng vòng lặp while với điều kiện n--
+    // n sẽ giảm đến khi bằng 0 thì vòng lặp kết thúc
+    while(n--)
+    {
+        // Ví dụ n = 4, x = 3 thì ( result = result * 4) thực hiện 4 lần như vậy
+        result = result * x;
+    }
+    return result;
+}
+
 int main()
 {
-    // Tính tổng S(n)
     // Tạo biến
-    int i, n;
-    float S;
+    float x, z;
+    int n;
 
-    //  cho giá trị ban đầu
-    S = 0;
-    i = 1;
+    // Nhập giá trị từ bàn phím
+    cout << " Nhập vào cơ số x; " << endl;
+    cin >> x;
+    cout << " Nhập vào số mũ n; " << endl;
+    cin >> n;
 
-    // Nhập giá trị tư bàn phím    
-    do
-    {
-        // Cho đến khi n > 1 thì 
-        cout << "Nhập số N lớn hơn 1:" << endl;
-        cin >> n;
-        // Nếu số đã nhập n < 1 thì in hướng dẫn
-        if(n < 1)
-        {
-            cout << "N phải lớn hơn 1" << endl;
-        }
-    } while (n < 1);
-    
-
-    // khi mà i < n(số đã nhập) 
-    while(i <= n)
-    {
-        S = S + (float)i / (i + 1);
-        i++;
-    }
+    // Gọi hàm power_n() để tính x^n
+    z = Power_n(x, n);
 
     // Xuất kết quả
-    cout << "S=" << S << endl;
-    
+    cout << "Kết quả của ";
+    cout << x << "^" << n << "=" << z << endl;
+
     return 0;
 }

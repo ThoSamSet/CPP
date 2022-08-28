@@ -1,0 +1,1 @@
+Tính tổng các ước số của số nguyên dương 

@@ -27,8 +27,10 @@ int main()
     cout << "Các ước số lẻ của " << n << " là:" << endl;
     for(int i = 1; i <= n ;i++)
     {
+        // Nếu n chia hết cho i
         if(n % i == 0)
         {
+            // Nếu n là số lẻ 
             if(i % 2 == 1)
             {
                 cout << " " << i;

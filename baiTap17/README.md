@@ -1,0 +1,1 @@
+Tính ước số lẻ lớn nhất của n

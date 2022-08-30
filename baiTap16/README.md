@@ -1,0 +1,1 @@
+Tính tổng các số nguyên chẵn của số n 

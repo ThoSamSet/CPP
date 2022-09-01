@@ -31,13 +31,17 @@ int main()
     while(temp != 0)
     {
         // Sau mỗi vòng lặp, nếu temp là số lẻ thì count tăng thêm 1
-        if(temp % 2 == 1) count++;
+        if(temp % 2 == 1) 
+        {
+            count++;
+            cout << " " << temp;
+        }
         // Chia lấy nguyên cho 10, cứ mỗi lần chia thì số n có một chữ số
         temp = temp / 10;
     }
 
     // Xuất kết quả
-    cout << "Số " << n << " có " << count << " chữ số lẻ!!" << endl;
+    cout << endl << "Số " << n << " có " << count << " chữ số lẻ!!" << endl;
     
     return 0;
 }

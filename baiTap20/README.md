@@ -1,0 +1,1 @@
+Tìm chữ số đầu tiên của số nguyên dương n

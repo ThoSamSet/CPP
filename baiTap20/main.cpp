@@ -1,14 +1,12 @@
 #include <iostream>
 #include <stdio.h>
-#include <math.h>
 
 using namespace std;
 
 int main()
 {
     // Tạo biến
-    long n, temp;
-    int count = 0;
+    int temp, n, max;
 
     // Nhập dữ liệu từ bàn phím 
     // Số đã nhập phải lớn hơn 0
@@ -22,6 +20,20 @@ int main()
             cout << "Số n phải lớn hơn 0!!!" << endl;
         }
     }while(n <= 0);
+
+    // Gán temp = n
+    temp = n;
+
+    // Tìm chữ số đầu tiên bằng cách chia lấy dư cho 10
+    do 
+    {
+        max = temp % 10;
+    }while(temp /= 10);
+
+    // In kết quả 
+    cout << " Chữ số đầu tiên của " << n << " là: " << max << endl;
+
+
 
     return 0;
 }

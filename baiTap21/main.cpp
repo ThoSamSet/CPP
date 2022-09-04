@@ -27,5 +27,18 @@ int main()
     //  Nếu n == 0 thì sớ lớn nhất bằng 0
     if(n == 0) max = 0;
 
+    // Sử dụng do while để tìm số lớn nhất 
+    do
+    {
+        i = n % 10;
+        if(i > max)
+        {
+            max = i;
+        }
+    }while(n /= 10);  
+
+    // In kết quả
+    cout << "Chữ số lớn nhất của " << n << " là: " << max << endl;
+
     return 0;
 }

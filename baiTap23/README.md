@@ -1,1 +1,1 @@
-Đếm chữ số lớn nhất của số nguyên dương n
+Kiểm tra số n có toàn chữ số lẻ hay không

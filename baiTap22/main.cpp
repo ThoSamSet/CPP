@@ -32,7 +32,7 @@ int main()
     } while (n /= 10);
 
     // In két quả
-    cout << "Chữ số lớn nhất trong " << n << "  là: " << max << endl;
+    cout << "Chữ số lớn nhất trong " << temp << "  là: " << max << endl;
     cout << " Có " << count << " chữ số " << max << " trong số " << temp << endl;
     
     

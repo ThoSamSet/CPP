@@ -14,5 +14,7 @@ int main()
     cout << *p << endl;
     delete p;
 
+    //thu nghiem
+
     return 0;
 }

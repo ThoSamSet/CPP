@@ -6,9 +6,11 @@
 //
 
 #include <iostream>
+#include "Header.h"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    cout << "Hello!!" << endl;
+    
     return 0;
 }

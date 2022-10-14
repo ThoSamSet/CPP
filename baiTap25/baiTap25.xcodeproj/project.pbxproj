@@ -26,6 +26,10 @@
 		41489AA228F8C84B00CB220A /* baiTap25 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = baiTap25; sourceTree = BUILT_PRODUCTS_DIR; };
 		41489AA528F8C84B00CB220A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		418F267928F8D1F100A1B3F8 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		418F267C28F996EC00A1B3F8 /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		418F267E28F9975700A1B3F8 /* Math_Fn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Math_Fn.h; sourceTree = "<group>"; };
+		418F267F28F997D200A1B3F8 /* String_Fn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String_Fn.h; sourceTree = "<group>"; };
+		418F268028F9984300A1B3F8 /* ConNguoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConNguoi.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,30 @@
 		41489AA428F8C84B00CB220A /* baiTap25 */ = {
 			isa = PBXGroup;
 			children = (
-				41489AA528F8C84B00CB220A /* main.cpp */,
-				418F267928F8D1F100A1B3F8 /* Header.h */,
+				418F267B28F9967400A1B3F8 /* Header */,
+				418F267A28F9966000A1B3F8 /* SourceCode */,
 			);
 			path = baiTap25;
+			sourceTree = "<group>";
+		};
+		418F267A28F9966000A1B3F8 /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				41489AA528F8C84B00CB220A /* main.cpp */,
+			);
+			path = SourceCode;
+			sourceTree = "<group>";
+		};
+		418F267B28F9967400A1B3F8 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				418F267928F8D1F100A1B3F8 /* Header.h */,
+				418F267C28F996EC00A1B3F8 /* Define.h */,
+				418F267E28F9975700A1B3F8 /* Math_Fn.h */,
+				418F267F28F997D200A1B3F8 /* String_Fn.h */,
+				418F268028F9984300A1B3F8 /* ConNguoi.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

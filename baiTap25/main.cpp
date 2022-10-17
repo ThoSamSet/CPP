@@ -1,7 +1,24 @@
 #include <iostream>
-#include "ConNguoi.h"
 
 using namespace std;
+
+class ConNguoi
+{
+    string hoTen;
+    int tuoi;
+
+public:
+    string getHoTen()
+    {
+        return hoTen;
+    };
+
+public:
+    void setHoTen(string _hoTen)
+    {
+        hoTen = _hoTen;
+    };
+};
 
 int main()
 {
@@ -13,7 +30,7 @@ int main()
 
     obj.setHoTen(hoTen);
 
-    cout << obj.getHoTen() << endl;
+    cout << "Họ và Tên: " << obj.getHoTen() << endl;
 
     return 0;
 }

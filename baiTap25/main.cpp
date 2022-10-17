@@ -61,15 +61,42 @@ class ConNguoi
     int tuoi;
 
 public:
+    ConNguoi()
+    {
+        this->hoTen = "";
+        this->tuoi = 0;
+    }
+
+    ~ConNguoi()
+    {
+        this->hoTen = "";
+        this->tuoi = 0;
+    }
+
+    //Lấy họ tên
     string getHoTen()
     {
         return hoTen;
     };
 
+    //Lấy tuôi  
+    int getTuoi()
+    {
+        return tuoi;
+    }
+
 public:
+    //Set họ tên
     void setHoTen(string _hoTen)
     {
+        _hoTen = InHoa(_hoTen);
         hoTen = _hoTen;
+    };
+
+    //Set tuổi
+    void setTuoi(int _tuoi)
+    {
+        tuoi = _tuoi;
     };
 };
 
@@ -79,11 +106,16 @@ int main()
 
     string hoTen;
     cout << "Nhập họ và tên: ";
-    cin >> hoTen;
-
+    getline(cin, hoTen);
     obj.setHoTen(hoTen);
 
+    int tuoi;
+    cout << "Nhập tuổi: ";
+    cin >> tuoi;
+    obj.setTuoi(tuoi);
+
     cout << "Họ và Tên: " << obj.getHoTen() << endl;
+    cout << "Tuổi: " << obj.getTuoi() << endl;
 
     return 0;
 }
